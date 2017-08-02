@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row" style="margin:5%">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped  table1" >
+        <tr>
+          <th>No.Kamar</th>
+          <th>Type</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Book</th>
+        </tr>
+        <tr *ngFor="let r of roomlist; let i of index"  >
+          <td>{{r.Room}}</td>
+          <td>{{r.Type}}</td>
+          <td>{{r.Price}}</td>
+          <td>{{r.Status}}</td>
+          <td>
+            <button class="btn btn-success" (click)="bookroom" >BOOK</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
