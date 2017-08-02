@@ -15,9 +15,9 @@ export class RoomlistComponent implements OnInit {
   }
 
   roomlist: Object[] = [
-    {"Room" : "301", "Type" : "Deluxe", "Price" : 2000, "Status" : "avaliable"},
+    {"Room" : "301", "Type" : "Deluxe", "Price" : 2000, "Status" : 1},
 
-    {"Room" : "302", "Type" : "PresidentSuite", "Price" : 1000, "Status" : "not avaliable"},
+    {"Room" : "302", "Type" : "PresidentSuite", "Price" : 1000, "Status" : 0},
 
   ]
   if (){

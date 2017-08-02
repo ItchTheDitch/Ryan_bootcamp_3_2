@@ -13,8 +13,7 @@
           <td>{{r.Room}}</td>
           <td>{{r.Type}}</td>
           <td>{{r.Price}}</td>
-          <td>{{r.Status}}</td>
-          <td>
+          <td *ngIf = "r.Status == 1; else firstTemp"><div style="color:green"> Available </div></td> <!--Else --> <ng-template #firstTemp> <td><div style="color:red"> Unavailable </div></td> </ng-template><td>
             <button class="btn btn-success" (click)="bookroom" >BOOK</button>
           </td>
         </tr>
