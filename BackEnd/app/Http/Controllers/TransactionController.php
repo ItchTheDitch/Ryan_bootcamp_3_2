@@ -30,7 +30,8 @@ class TransactionController extends Controller
           $tlist = new transactions;
           $tlist->customer_id = $customerid;
           $tlist->room_id = $roomid;
-        
+          $tlist->save();
+
 
           $transactonslist = transactions::get();
 
