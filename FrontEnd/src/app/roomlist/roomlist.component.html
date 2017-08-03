@@ -17,11 +17,13 @@
             <div style="color:green"> Available </div>
           </td>
           <!--Else -->
-          <ng-template #firstTemp> <td>
+          <ng-template #firstTemp>
+            <td>
             <div style="color:red"> Unavailable </div>
-          </td></ng-template><td>
-
-
+          </td>
+        </ng-template>
+        
+        <td>
             <div *ngIf = "r.Status == 1; else secondTemp">
               <button class="btn btn-success" (click)="bookroom" >BOOK</button>
             </div>
@@ -29,9 +31,6 @@
             <ng-template #secondTemp> <td>
             <button class="btn btn-danger" (click)="bookroom" >BOOKED</button>
             </td></ng-template>
-
-
-
           </td>
         </tr>
       </table>

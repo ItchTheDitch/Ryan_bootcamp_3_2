@@ -26,6 +26,12 @@ class TransactionController extends Controller
           $customerid = $request->input('customer_id');
           $roomid = $request->input('room_id');
 
+
+          $tlist = new transactions;
+          $tlist->customer_id = $customerid;
+          $tlist->room_id = $roomid;
+        
+
           $transactonslist = transactions::get();
 
           DB::commit();
